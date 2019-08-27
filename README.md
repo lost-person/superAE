@@ -12,4 +12,5 @@ If you use this code for your research, please cite the paper this code is based
 ```
 
 preprocess.py 数据预处理程序，以供 train.py使用 输入参数：-train\_src, -train\_tgt, -valid\_src, \valid\_tgt, -save\_data
+
 lcsts.yaml 配置文件

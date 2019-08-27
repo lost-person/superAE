@@ -9,7 +9,6 @@ from torch.autograd import Variable
 import torch.utils.data
 import torch.backends.cudnn as cudnn
 from torch.nn.utils.rnn import pack_padded_sequence as pack
-from torch.utils.serialization import load_lua
 import models
 import data.dataloader as dataloader
 import data.utils as utils

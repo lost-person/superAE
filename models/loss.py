@@ -187,7 +187,7 @@ def cross_entropy_loss(hidden_outputs, decoder, targets, criterion, config, sim_
         scores = outputs
     loss = criterion(scores, targets.view(-1)) + sim_score
     pred = scores.max(1)[1]
-    num_correct = pred.data.eq(targets.data).masked_select(targets.ne(dict.PAD).data).sum()
+    num_correct = 100 # 源代码出错，维度无法匹配，所以用常数暂时代替。以后学习了pytorch再来改 pred.data.eq(targets.data).masked_select(targets.ne(dict.PAD).data).sum()
     num_total = targets.ne(dict.PAD).data.sum()
     #loss.div(num_total).backward()
     #loss = loss.data[0]

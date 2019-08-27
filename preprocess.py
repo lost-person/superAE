@@ -73,7 +73,9 @@ torch.manual_seed(opt.seed)
 def makeVocabulary(filename, size):
     vocab = dict.Dict([dict.PAD_WORD, dict.UNK_WORD,
                        dict.BOS_WORD, dict.EOS_WORD], lower=opt.lower)
-
+    max_tokens = opt.trun_src
+    max_lengths = opt.src_length
+    char = opt.src_char
     if type(filename) == str:
         filename = [filename]
 

@@ -41,7 +41,7 @@ class Dict(object):
 
     # Write entries to a file.
     def writeFile(self, filename):
-        with open(filename, 'w') as file:
+        with open(filename, 'w', encoding='utf-8') as file:
             for i in range(self.size()):
                 label = self.idxToLabel[i]
                 file.write('%s %d\n' % (label, i))

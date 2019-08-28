@@ -12,7 +12,7 @@ If you use this code for your research, please cite the paper this code is based
 ```
 
 注：
-此项目是在 linux 上运行的。虽然我修改了一些bug，但是 win10 上还是有点问题。
+此项目本来是在 linux 上运行的，经过修改之后可在 win 上运行。
 
 preprocess.py 数据预处理程序，以供 train.py使用 输入参数：-train\_src（训练文章数据地址）, -train\_tgt（训练摘要数据地址）, -valid\_src（验证文章数据地址）, valid\_tgt（验证摘要数据地址）, -save\_data（存储数据地址）
 
